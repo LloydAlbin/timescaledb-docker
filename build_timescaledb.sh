@@ -91,9 +91,23 @@ git_push()
 	# git_push timescaledb ORG NAME $build_location PG_VER
 	print_verbose 1 "Push TimescaleDB Docker Image"
 
+	do_push=0
+	VERSION=$( awk '/^ENV TIMESCALEDB_VERSION/ {print $3}' $5/timescaledb-docker/Dockerfile )
+
 	# TimescaleDB
 	if [ $2 -eq 1 ]; then
-		VERSION=$( awk '/^ENV TIMESCALEDB_VERSION/ {print $3}' $5/timescaledb-docker/Dockerfile )
+		if [ $push_force -eq "1" ]; then
+			do_push=1
+		else
+			if docker_tag_exists $3/$4 $VERSION-$6; then
+				print_verbose 2 "Skipping the Docker Push because the Docker Image already exists: $3/$4:$VERSION-$6"
+			else
+				do_push=1
+			fi
+		fi
+	fi
+
+	if [ $do_push -eq "1" ]; then
 		print_verbose 3 "Timescale Version: $VERSION from $5/timescaledb-docker/Dockerfile"
 
 		print_verbose 2 "Pushing Docker Image: $3/$4:$VERSION-$6"
