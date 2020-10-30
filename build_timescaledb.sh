@@ -176,8 +176,8 @@ function check_git_to_docker()
 	print_verbose 3 "Found GIT Version: $ts_docker_version"
 
 	# TimescaleDB
-	print_verbose 3 "Checking for Docker Version: $ORG/$TS_NAME:$PG_VERSION-$ts_docker_version"
-	if docker_tag_exists $ORG/$TS_NAME $PG_VERSION-$ts_docker_version; then
+	print_verbose 3 "Checking for Docker Version: $ORG/$TS_NAME:$ts_docker_version-$PG_VER"
+	if docker_tag_exists $ORG/$TS_NAME $ts_docker_version-$PG_VER; then
 		print_verbose 3 "Docker Matches GIT Version"
 		return 0
 	else
