@@ -2,8 +2,8 @@
 
 |Postgresql-TimescaleDB|Build Status|
 |:---:|:---:|
-|[![2.0.x-pg1](https://img.shields.io/docker/v/lloydalbin/timescaledb/2.0.0-rc2-pg11)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|[![Build Status](https://travis-matrix-badges.herokuapp.com/repos/LloydAlbin/timescaledb-docker/branches/main/1)](https://www.travis-ci.org/LloydAlbin/timescaledb-docker/builds)|
-|[![2.0.x-pg12](https://img.shields.io/docker/v/lloydalbin/timescaledb/2.0.0-rc2-pg12)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|[![Build Status](https://travis-matrix-badges.herokuapp.com/repos/LloydAlbin/timescaledb-docker/branches/main/2)](https://www.travis-ci.org/LloydAlbin/timescaledb-docker/builds)|
+|[![2.0.x-pg1](https://img.shields.io/docker/v/lloydalbin/timescaledb/2.0.0-rc2-pg11)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|[![Build Status](https://travis-matrix-badges.herokuapp.com/repos/LloydAlbin/timescaledb-docker/branches/main/1?use_travis_com=true)](https://www.travis-ci.org/LloydAlbin/timescaledb-docker/builds)|
+|[![2.0.x-pg12](https://img.shields.io/docker/v/lloydalbin/timescaledb/2.0.0-rc2-pg12)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|[![Build Status](https://travis-matrix-badges.herokuapp.com/repos/LloydAlbin/timescaledb-docker/branches/main/2?use_travis_com=true)](https://www.travis-ci.org/LloydAlbin/timescaledb-docker/builds)|
 |**License**|![GitHub](https://img.shields.io/github/license/LloydAlbin/timescaledb-docker)|
 
 ## Previous Builds
