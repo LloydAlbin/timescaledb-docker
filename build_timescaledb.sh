@@ -441,6 +441,8 @@ if [ $timescaledb -eq 1 ]; then
 	else
 		# Get/Update Repository
 		git_update $build_location/timescaledb-docker https://github.com/timescale/timescaledb-docker.git $TS_VER
+        # Patch Makefile
+        timescaledb_patch $build_location $ORG $PG_NAME
 		check_git_to_docker
 		check_val=$?
 		if [ $check_val -eq "1" ]; then
@@ -454,8 +456,6 @@ if [ $timescaledb -eq 1 ]; then
 			fi
 		fi
 		if [ $do_build -eq 1 ]; then
-            # Patch Makefile
-            timescaledb_patch $build_location $ORG $PG_NAME
             # Build Docker Image
             timescaledb_build $build_location $ORG $TS_NAME $PG_VER_NUMBER $PG_VER
 		fi
