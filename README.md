@@ -2,8 +2,8 @@
 
 |Postgresql-TimescaleDB|Build Status|
 |:---:|:---:|
-|[![2.0.x-pg1](https://img.shields.io/docker/v/lloydalbin/timescaledb/2.0.0-rc1-pg11)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|[![Build Status](https://travis-matrix-badges.herokuapp.com/repos/LloydAlbin/timescaledb-docker/branches/main/10)](https://www.travis-ci.org/LloydAlbin/timescaledb-docker/builds)|
-|[![2.0.x-pg12](https://img.shields.io/docker/v/lloydalbin/timescaledb/2.0.0-rc2-pg12)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|[![Build Status](https://travis-matrix-badges.herokuapp.com/repos/LloydAlbin/timescaledb-docker/branches/main/13)](https://www.travis-ci.org/LloydAlbin/timescaledb-docker/builds)|
+|[![2.0.x-pg1](https://img.shields.io/docker/v/lloydalbin/timescaledb/2.0.0-rc1-pg11)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|[![Build Status](https://travis-matrix-badges.herokuapp.com/repos/LloydAlbin/timescaledb-docker/branches/main/1)](https://www.travis-ci.org/LloydAlbin/timescaledb-docker/builds)|
+|[![2.0.x-pg12](https://img.shields.io/docker/v/lloydalbin/timescaledb/2.0.0-rc2-pg12)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|[![Build Status](https://travis-matrix-badges.herokuapp.com/repos/LloydAlbin/timescaledb-docker/branches/main/2)](https://www.travis-ci.org/LloydAlbin/timescaledb-docker/builds)|
 |**License**|![GitHub](https://img.shields.io/github/license/LloydAlbin/timescaledb-docker)|
 
 |Previous Builds|
@@ -24,19 +24,19 @@ The Official TimescaleDB version is created by default using the PostgreSQL Alpi
 
 * [TimescaelDB](https://www.timescale.com/products) - Timescale Database
 
-# TimescaleDB
+## Download
 
-Download the pg_monitor repository. The make file will also put the postgres and timescaledb-docker repositories into your home directory by default unless you use the location argument.
+Download the timescaledb-docker repository.
 
 ```bash
 cd ~
-# Get the pg_monitor repositories
-git clone https://github.com/LloydAlbin/pg_monitor.git
+# Get the timescaledb-docker repositories
+git clone https://github.com/LloydAlbin/timescaledb-docker.git ~/lloydalbin-timescaledb-docker/
 ```
 
 ## Build Custom TimescaleDB
 
-To run the make command, you need to be inside this directory (~/pg_monitor/timescaledb/custom/).
+To run the make command, you need to be inside this directory (~/timescaledb-docker/).
 
 The make command takes some optional options:
 
