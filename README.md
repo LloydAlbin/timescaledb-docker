@@ -2,18 +2,18 @@
 
 |Postgresql-TimescaleDB|Build Status|
 |:---:|:---:|
-|[![2.0.x-pg1](https://img.shields.io/docker/v/lloydalbin/timescaledb/2.0.0-rc1-pg11)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|[![Build Status](https://travis-matrix-badges.herokuapp.com/repos/LloydAlbin/timescaledb-docker/branches/main/1)](https://www.travis-ci.org/LloydAlbin/timescaledb-docker/builds)|
+|[![2.0.x-pg1](https://img.shields.io/docker/v/lloydalbin/timescaledb/2.0.0-rc2-pg11)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|[![Build Status](https://travis-matrix-badges.herokuapp.com/repos/LloydAlbin/timescaledb-docker/branches/main/1)](https://www.travis-ci.org/LloydAlbin/timescaledb-docker/builds)|
 |[![2.0.x-pg12](https://img.shields.io/docker/v/lloydalbin/timescaledb/2.0.0-rc2-pg12)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|[![Build Status](https://travis-matrix-badges.herokuapp.com/repos/LloydAlbin/timescaledb-docker/branches/main/2)](https://www.travis-ci.org/LloydAlbin/timescaledb-docker/builds)|
 |**License**|![GitHub](https://img.shields.io/github/license/LloydAlbin/timescaledb-docker)|
 
 ## Previous Builds
 
-|PostgreSQL 10.x|PostgreSQL 11.x|PostgreSQL 12.x|
-|:---:|:---:|:---:|
-|[![1.5.x-pg10](https://img.shields.io/docker/v/lloydalbin/timescaledb/1.5.1-pg10)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|[![1.5.x-pg11](https://img.shields.io/docker/v/lloydalbin/timescaledb/1.5.1-pg11)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)||
-|[![1.6.x-pg10](https://img.shields.io/docker/v/lloydalbin/timescaledb/1.6.1-pg10)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|[![1.6.x-pg11](https://img.shields.io/docker/v/lloydalbin/timescaledb/1.6.1-pg11)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)||
-|[![1.7.x-pg10](https://img.shields.io/docker/v/lloydalbin/timescaledb/1.7.4-pg10)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|[![1.7.x-pg11](https://img.shields.io/docker/v/lloydalbin/timescaledb/1.7.4-pg11)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|[![1.7.x-pg12](https://img.shields.io/docker/v/lloydalbin/timescaledb/1.7.4-pg12)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|
-||[![2.0.x-pg11](https://img.shields.io/docker/v/lloydalbin/timescaledb/2.0.0-rc1-pg11)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|[![2.0.x=pg12](https://img.shields.io/docker/v/lloydalbin/timescaledb/2.0.0-rc1-pg12)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|
+|PostgreSQL 9.6.x|PostgreSQL 10.x|PostgreSQL 11.x|PostgreSQL 12.x|
+|:---:|:---:|:---:|:---:|
+|[![1.5.x-pg9.6](https://img.shields.io/docker/v/lloydalbin/timescaledb/1.5.1-pg9.6)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|[![1.5.x-pg10](https://img.shields.io/docker/v/lloydalbin/timescaledb/1.5.1-pg10)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|[![1.5.x-pg11](https://img.shields.io/docker/v/lloydalbin/timescaledb/1.5.1-pg11)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)||
+|[![1.6.x-pg9.6](https://img.shields.io/docker/v/lloydalbin/timescaledb/1.6.1-pg9.6)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|[![1.6.x-pg10](https://img.shields.io/docker/v/lloydalbin/timescaledb/1.6.1-pg10)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|[![1.6.x-pg11](https://img.shields.io/docker/v/lloydalbin/timescaledb/1.6.1-pg11)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)||
+|[![1.7.x-pg9.6](https://img.shields.io/docker/v/lloydalbin/timescaledb/1.7.4-pg9.6)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|[![1.7.x-pg10](https://img.shields.io/docker/v/lloydalbin/timescaledb/1.7.4-pg10)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|[![1.7.x-pg11](https://img.shields.io/docker/v/lloydalbin/timescaledb/1.7.4-pg11)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|[![1.7.x-pg12](https://img.shields.io/docker/v/lloydalbin/timescaledb/1.7.4-pg12)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|
+|||[![2.0.x-pg11](https://img.shields.io/docker/v/lloydalbin/timescaledb/2.0.0-rc1-pg11)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|[![2.0.x=pg12](https://img.shields.io/docker/v/lloydalbin/timescaledb/2.0.0-rc1-pg12)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|
 
 This is a custom builder that is based off the Official TimescaleDB builder. The build script patches the official Dockerfile and then builds using the updated Dockerfile.
 
