@@ -8,8 +8,9 @@
 
 ## Previous Builds
 
-|PostgreSQL 9.6.x|PostgreSQL 10.x|PostgreSQL 11.x|PostgreSQL 12.x|
-|:---:|:---:|:---:|:---:|
+|PostgreSQL 9.6.x|PostgreSQL 10.x|PostgreSQL 11.x|PostgreSQL 12.x|PostgreSQL 13.x|
+|:---:|:---:|:---:|:---:|:---:|
+|![Relative date](https://img.shields.io/date/1636588800?label=EOL)|![Relative date](https://img.shields.io/date/1668038400?label=EOL)|![Relative date](https://img.shields.io/date/1699488000?label=EOL)|![Relative date](https://img.shields.io/date/1731542400?label=EOL)|![Relative date](https://img.shields.io/date/1762992000?label=EOL)|
 |[![1.5.x-pg9.6](https://img.shields.io/docker/v/lloydalbin/timescaledb/1.5.1-pg9.6)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|[![1.5.x-pg10](https://img.shields.io/docker/v/lloydalbin/timescaledb/1.5.1-pg10)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|[![1.5.x-pg11](https://img.shields.io/docker/v/lloydalbin/timescaledb/1.5.1-pg11)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)||
 |[![1.6.x-pg9.6](https://img.shields.io/docker/v/lloydalbin/timescaledb/1.6.1-pg9.6)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|[![1.6.x-pg10](https://img.shields.io/docker/v/lloydalbin/timescaledb/1.6.1-pg10)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|[![1.6.x-pg11](https://img.shields.io/docker/v/lloydalbin/timescaledb/1.6.1-pg11)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)||
 |[![1.7.x-pg9.6](https://img.shields.io/docker/v/lloydalbin/timescaledb/1.7.4-pg9.6)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|[![1.7.x-pg10](https://img.shields.io/docker/v/lloydalbin/timescaledb/1.7.4-pg10)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|[![1.7.x-pg11](https://img.shields.io/docker/v/lloydalbin/timescaledb/1.7.4-pg11)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|[![1.7.x-pg12](https://img.shields.io/docker/v/lloydalbin/timescaledb/1.7.4-pg12)](https://hub.docker.com/r/lloydalbin/timescaledb/tags)|
