@@ -33,10 +33,35 @@ jobs:
         - docker images
         - echo "$DOCKER_PASSWORD" | docker login -u $DOCKER_USERNAME --password-stdin
         - ~/build/LloydAlbin/timescaledb-docker/build_timescaledb.sh -v -v -v -V -pgv $PGVERSION --org $DOCKER_ORG --pg_name $DOCKER_IMAGE_NAME --ts_name $DOCKER_IMAGE_NAME_TIMESCALE --push_only
+
     - #stage: PostgreSQL 12
       name: "TimescaleDB HEAD - PostgreSQL 12"
       env:
         - PGVERSION=pg12
+      language: bash
+      services: docker
+      sudo: required
+      addons:
+        apt:
+          packages:
+            - perl
+            - python3
+            - python3-psycopg2
+            - python3-daemon
+      before_script:
+        # Add https://metacpan.org/pod/TAP::Parser::SourceHandler::pgTAP for pg_prove
+        - cpanm --sudo TAP::Parser::SourceHandler::pgTAP
+      script: 
+        - ~/build/LloydAlbin/timescaledb-docker/build_timescaledb.sh -v -v -v -V -pgv $PGVERSION --org $DOCKER_ORG --pg_name $DOCKER_IMAGE_NAME_POSTGRES --ts_name $DOCKER_IMAGE_NAME_TIMESCALE
+      after_script:
+        - docker images
+        - echo "$DOCKER_PASSWORD" | docker login -u $DOCKER_USERNAME --password-stdin
+        - ~/build/LloydAlbin/timescaledb-docker/build_timescaledb.sh -v -v -v -V -pgv $PGVERSION --org $DOCKER_ORG --pg_name $DOCKER_IMAGE_NAME --ts_name $DOCKER_IMAGE_NAME_TIMESCALE --push_only
+
+    - #stage: PostgreSQL 13
+      name: "TimescaleDB HEAD - PostgreSQL 13"
+      env:
+        - PGVERSION=pg13
       language: bash
       services: docker
       sudo: required
